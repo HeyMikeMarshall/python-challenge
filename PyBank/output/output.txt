@@ -1,0 +1,9 @@
+
+#Financial Analysis
+#-----------------------------------------------
+#Term (in mths): 86
+#Net PL in Term: $ 38382578
+#Avg PL in Term: $ 446309.05
+#Greatest Increase: Feb-2012  $ 1170593
+#Greatest Decrease: Sep-2013  $ -1196225
+
