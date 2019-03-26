@@ -1,5 +1,17 @@
 # python-challenge
 
+Hey there reader!
+
+PyBank and PyPoll are here.
+
+
+
+
+
+
+
+
+
 # Unit 3 | Assignment - Py Me Up, Charlie
 
 ## Background
@@ -36,7 +48,7 @@ Both of these challenges encompasses a real-world situation where your newfound 
   * The greatest increase in profits (date and amount) over the entire period
 
   * The greatest decrease in losses (date and amount) over the entire period
-
+#****&&&&&*****
 * As an example, your analysis should look similar to the one below:
 
   ```text
