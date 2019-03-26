@@ -17,8 +17,10 @@ compline = []
 
 ##funtion to output print lines to text file
 def tolog(text):
+    print(text)
     with open(output_dir, "a+") as text_file:
         print(text, file=text_file)
+        
 # O's! Say does that star spangled etc.
 flag = (f"""
 * * * * * * ---------------
@@ -34,7 +36,6 @@ flag = (f"""
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 """)
 #print the flag
-print(flag)
 tolog(flag)
 #open election data, tally total votes and add candidates to list
 with open(election_data, newline='') as f:
@@ -45,8 +46,6 @@ with open(election_data, newline='') as f:
         if row[2] not in candidates:
             candidates.append(row[2])
 #print total vote to terminal        
-print(f"Total Votes: {ttl_vote}")
-print(f"---------------------------")
 #print total vote to text file
 tolog(f"Total Votes: {ttl_vote}")
 tolog(f"---------------------------")
@@ -66,11 +65,9 @@ for candidate in candidates:
         winname = candidate
 #for each candidate print that candidate data to screen and text file.
     tolog(f"{candidate}: %{round(pct, 3)} ({tallys[canid]})")
-    print(f"{candidate}: %{round(pct, 3)} ({tallys[canid]})")
 #WE GOT A WINNER! 
 winlog = (f"""---------------------------
 Winner: {winname}
 ---------------------------""")
 #print the winlog to screen and text file, call it a day.
-print(winlog)
 tolog(winlog)
