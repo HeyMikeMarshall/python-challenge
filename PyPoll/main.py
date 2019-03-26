@@ -20,7 +20,7 @@ def tolog(text):
     print(text)
     with open(output_dir, "a+") as text_file:
         print(text, file=text_file)
-        
+
 # O's! Say does that star spangled etc.
 flag = (f"""
 * * * * * * ---------------
@@ -45,8 +45,7 @@ with open(election_data, newline='') as f:
         ttl_vote += 1
         if row[2] not in candidates:
             candidates.append(row[2])
-#print total vote to terminal        
-#print total vote to text file
+#print total vote counts
 tolog(f"Total Votes: {ttl_vote}")
 tolog(f"---------------------------")
 #tally each candidate. takes a couple of seconds, this is where you appreciate the flag.
